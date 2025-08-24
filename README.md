@@ -37,3 +37,30 @@ pip install docx2txt
 pip install sentence-transformers
 pip install google-generativeai
 pip install python-dotenv  # optional, if you want to load env vars from .env
+```
+
+## How to Run 
+
+1. **Open the notebook** in Google Colab.  
+
+2. **Upload your PDFs** to `/content/` (or adjust the paths accordingly).  
+
+3. **Install the missing dependencies** (see `requirements.txt`).  
+
+4. **Set your `GOOGLE_API_KEY` securely** (refer to API Key instructions).  
+
+5. **Update the `files` list**, for example:  
+   ```python
+   files = [
+       "/content/2307.06435v10.pdf",
+       "/content/NIPS-2017-attention-is-all-you-need-Paper.pdf"
+   ]
+6. Run all cells in order.
+
+7. When you see:
+   Documents processed and FAISS index built!, type questions in the prompt:
+   ```bash
+   Ask a question about your documents (or type 'exit' to quit):
+   ```
+8. Type exit to quit.
+
